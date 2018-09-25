@@ -1,0 +1,59 @@
+#header {
+    font-family: 'Satisfy', cursive;
+    color:white;
+    text-align:center;
+    padding:10px;
+    width:90%;
+    float: right;
+}
+#nav {
+    margin-left:50px;
+    line-height:50px;
+    top:30%;
+    width:10%;
+    float:left;
+    text-align:center;
+}
+#section {
+    width:85%;
+    float:left;
+    padding:10px;
+}
+#footer {
+    color:Black;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+p{
+    color: white;
+    height: 5%;
+    border-bottom:1px dotted #ccc;
+}
+#opSection{
+    padding:15px 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+}
+#opSection li.optionLi a{
+    outline:none;
+    font-family:"黑体";
+    font-size:  14px;
+    background-color: green;
+    border:2px solid #a1a1a1;
+    border-radius:25px;
+    margin:30px 0;
+    display: block;
+    height: 50px;
+    line-height:  50px;
+    width:120px;
+    cursor: pointer;
+    position: relative;
+}
+#opSection li a:hover{
+    background-color: white;
+}
+.backgroundImg{
+
+}

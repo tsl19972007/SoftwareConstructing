@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+
+    <title>MyPainter</title>
+
+    <link href="../static/css/basicStyle.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/sweetalert.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+    <script type="text/javascript" src="../static/js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../static/js/sweetalertModule.js"></script>
+    <script type="text/javascript" src="../static/js/DataHandler.js"></script>
+    <script type="text/javascript" src="../static/js/Recognize.js"></script>
+    <script type="text/javascript" src="../static/js/CanvasHandler.js"></script>
+    <script type="text/javascript" src="../static/js/ActionListener.js"></script>
+</head>
+<body background="../static/img/background-canvas.jpg" class="backgroundImg">
+<div id="header">
+    <h1>MY PAINTER</h1>
+</div>
+
+<div id="nav" >
+    <ul id="opSection">
+        <li class="optionLi"><a href="#">新建画布</a></li>
+        <li class="optionLi"><a href="#">识别图形</a></li>
+        <li class="optionLi"><a href="#">保存图片</a></li>
+        <li class="optionLi"><a href="#">导入图片</a></li>
+    </ul>
+
+</div>
+<canvas id="cvs" width="1200" height="600"></canvas>
+</div>
+</body>
+
+<script>
+    //需要保存的信息
+    var border=[];
+    var shapes=[];
+    var picture;
+    var isSaved=false;
+
+    function Picture(pictureId,shapes){
+        this.pictureId=pictureId;
+        this.shapes=shapes;
+    }
+    function Shape(type,border){
+        this.type=type;
+        this.border=border;
+    }
+</script>
+</html>
